@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/im_dizhi_tui"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/aa0"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认订单"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                /></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dizhi_tv_xingming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="姓名:" />
+                <TextView
+                    android:id="@+id/dizhi_tv_dianhua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="电话:"
+                    android:layout_marginLeft="90dp"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_dizhi_tianjia"
+                android:layout_below="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/i3"
+                    />
+                <TextView
+                    android:id="@+id/tv_dizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="地址111111111111111111111111111"
+                    android:layout_marginLeft="20dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/im_222222"
+                    android:layout_alignRight="@+id/tv_dizhi"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/i5"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            >
+
+            <TextView
+                android:id="@+id/tv_dizhi_jia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_dizhi_zhifu"
+                android:layout_alignBottom="@+id/tv_dizhi_zhifu"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="46dp"
+                android:layout_toLeftOf="@+id/tv_dizhi_zhifu"
+                android:layout_toStartOf="@+id/tv_dizhi_zhifu"
+                android:textColor="#f00"
+                android:textSize="14sp"
+                android:text="实付款:$4399.00" />
+            <TextView
+                android:id="@+id/tv_dizhi_zhifu"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:text="立即下单"
+                android:textColor="#FAFAFA"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:background="#f00"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

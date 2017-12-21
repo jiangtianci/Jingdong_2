@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/im_sou"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/aa0"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/ed_sou"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:hint="请输入所搜内容"
+            android:background="@null"
+            />
+        <TextView
+            android:id="@+id/tv_sou"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            />
+        <CheckBox
+            android:id="@+id/im_sou_lan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sou"
+            android:button="@null"
+            android:focusable="false"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sou_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

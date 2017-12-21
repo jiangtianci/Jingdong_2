@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jing_dong">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".fr.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/jd_buy_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Jingdong" />
+        <activity android:name=".Sousuo" />
+        <activity android:name=".activity_denglu.F5_login"/>
+        <activity android:name=".activity_denglu.F5_zhuce"/>
+        <activity android:name=".Sou_webview"/>
+        <activity android:name=".zhifu.PayDemoActivity"/>
+        <activity android:name=".F4_dizhi.Dizhi_class"/>
+        <activity android:name=".F4_dizhi.Tianjia"/>
+        <activity android:name=".F4_dizhi.Xindizhi"/>
+        <activity android:name=".fenlei.Fenlei_1"/>
+        <activity android:name=".fenlei.Fenlei_xiangqing"/>
+        <meta-data android:name="design_width" android:value="1080"></meta-data>
+        <meta-data android:name="design_height" android:value="1920"></meta-data>
+    </application>
+
+
+</manifest>
